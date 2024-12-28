@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1><U>LOGIN</U></h1>
+    <ul>
+        {% for logindetail in logindetails %}
+        <li>
+            <h3>{{logindetail.username}}</h3>
+            <h3>{{logindetail.password}}</h3>
+        </li>
+        {% endfor %}
+
+    </ul>
+    <input type="text", placeholder="Enter your name", class="form-control">
+    
+</body>
+</html>
